@@ -3,7 +3,7 @@ $(document).ready(function () {
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'css/github-widget.css';
+    link.href = 'https://cdn.rawgit.com/rudrakshpathak/github-profile-widget/master/css/github-widget.css';
     head.appendChild(link);
 
     var username = $("#github-widget").attr('data-github-username');
