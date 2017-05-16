@@ -31,7 +31,7 @@ function createLargeWidget(fetchUser, username, widgetColor) {
     $.get(fetchUser, function (result) {
         var htmlView = `<div class="github-widget">`;
         htmlView += `<section class="widget-header">`;
-        htmlView += `<img src="img/github-logo.png" class="github-logo">`;
+        htmlView += `<img src="https://cdn.rawgit.com/rudrakshpathak/github-profile-widget/master/img/github-logo.png" class="github-logo">`;
         htmlView += `<div class="details">`;
         htmlView += `<p><a id="username" href="` + result.html_url + `">` + result.name + `</a></p>`;
         htmlView += `<p id="location">` + result.location + `</p>`;
@@ -90,7 +90,7 @@ function createSmallWidget(fetchUser, username, widgetColor) {
     $.get(fetchUser, function (result) {
         var htmlView = `<div class="small-github-widget">`;
         htmlView += `<section class="widget-header">`;
-        htmlView += `<img src="img/github-logo.png" class="github-logo">`;
+        htmlView += `<img src="https://cdn.rawgit.com/rudrakshpathak/github-profile-widget/master/img/github-logo.png" class="github-logo">`;
         htmlView += `<div class="details">`;
         htmlView += `<p><a id="username" href="` + result.html_url + `">` + result.name + `</a></p>`;
         htmlView += `<p id="location">` + result.location + `</p>`;
